@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+      <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:scaleType="fitXY"
+          android:src="@drawable/img_1" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnReset"
+        android:layout_alignBottom="@+id/btnReset"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/btnReset"
+        android:onClick="displayNextImage"
+        android:text="@string/next" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnPrevious"
+        android:layout_alignBottom="@+id/btnPrevious"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetImages"
+        android:text="@string/reset" />
+
+    <Button
+        android:id="@+id/btnPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="displayPreviousImage"
+        android:text="@string/previous" />
+   
+</RelativeLayout>
